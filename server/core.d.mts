@@ -1,0 +1,2 @@
+export declare function extractJson(text: string): unknown;
+export declare function createHandler(opts: { prompt: string; log?: (m: string) => void; authorize?: ((req: Request, env: Record<string, string | undefined>) => Promise<{ ok: false; status?: number; error: string; code?: string } | { ok: true; key?: string; done?: (success: boolean) => Promise<unknown> }>) | null; health?: ((req: Request, env: Record<string, string | undefined>) => Promise<Record<string, unknown>>) | null }): (request: Request, env?: Record<string, string | undefined>) => Promise<Response | null>;

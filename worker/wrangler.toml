@@ -1,0 +1,14 @@
+# 用 wrangler CLI 部署（可选；也可以在 Cloudflare 控制台粘贴 dist/zhangqi-worker.js）
+#   cd worker && npx wrangler deploy
+#   npx wrangler secret put GEMINI_API_KEY      （或 ANTHROPIC_API_KEY）
+#   npx wrangler secret put ACCESS_TOKEN
+name = "zhangqi-recognize"
+main = "entry.mjs"
+compatibility_date = "2026-09-01"
+
+rules = [{ type = "Text", globs = ["**/*.txt"], fallthrough = true }]
+
+[vars]
+ALLOWED_ORIGINS = "https://你的用户名.github.io"
+GEMINI_MODEL = "gemini-3.8-flash"
+RATE_PER_MIN = "10"
