@@ -1,0 +1,3 @@
+# 用 Supabase CLI 部署时可参考（与 `supabase functions deploy recognize --no-verify-jwt` 等价）
+[functions.recognize]
+verify_jwt = false

@@ -1,0 +1,15 @@
+{
+  "merchant": {"value": "Loja Exemplo", "confidence": 0.62, "candidates": ["Loja Exemplo"]},
+  "orderNumber": {"value": "0258", "confidence": 0.93},
+  "billDate": {"raw": "12/09/26", "iso": null, "confidence": 0.8},
+  "items": [
+    {"row": 1, "quantity": 30, "description": "FN-A78", "unitPriceRaw": "8", "unitPriceCents": 800, "printedSubtotalRaw": "240", "printedSubtotalCents": 24000, "confidence": 0.94, "needsReview": false, "bbox": [0.05, 0.30, 0.9, 0.06]},
+    {"row": 2, "quantity": 5, "description": "FN-A76", "unitPriceRaw": "8", "unitPriceCents": 800, "printedSubtotalRaw": "40", "printedSubtotalCents": 4000, "confidence": 0.91, "needsReview": false, "bbox": [0.05, 0.37, 0.9, 0.06]},
+    {"row": 3, "quantity": 5, "description": "CA31-3", "unitPriceRaw": "15", "unitPriceCents": 1500, "printedSubtotalRaw": "75", "printedSubtotalCents": 7500, "confidence": 0.9, "needsReview": false, "bbox": [0.05, 0.44, 0.9, 0.06]},
+    {"row": 4, "quantity": 1, "description": "CA31-7", "unitPriceRaw": "13", "unitPriceCents": 1300, "printedSubtotalRaw": "13", "printedSubtotalCents": 1300, "confidence": 0.72, "needsReview": true, "bbox": [0.05, 0.51, 0.9, 0.06]}
+  ],
+  "printedTotalRaw": "368",
+  "printedTotalCents": 36800,
+  "unparsedLines": [],
+  "warnings": []
+}

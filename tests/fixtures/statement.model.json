@@ -1,0 +1,19 @@
+{
+  "docType": "statement",
+  "merchant": {"value": "KH-0001", "confidence": 0.9, "candidates": []},
+  "orderNumber": {"value": null, "confidence": 0},
+  "billDate": {"raw": null, "iso": null, "confidence": 0},
+  "items": [],
+  "printedTotalRaw": null,
+  "printedTotalCents": null,
+  "statement": {
+    "entries": [
+      {"date": "2026-09-02", "dateRaw": "02/09/2026", "orderNumber": "2609-0101", "cents": 150000, "raw": "1,500.00", "paid": true},
+      {"date": "2026-09-20", "dateRaw": "20/09/2026", "orderNumber": "2609-0202", "cents": 230000, "raw": "2,300.00", "paid": null}
+    ],
+    "payments": [{"date": "2026-09-03", "cents": 150000, "note": "PIX"}],
+    "balanceCents": 230000
+  },
+  "unparsedLines": [],
+  "warnings": ["表格用点做小数点（2,300.00），已按截图写法换算"]
+}
