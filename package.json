@@ -1,0 +1,37 @@
+{
+  "name": "zhangqi-zhushou",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:worker && tsc -b && vite build",
+    "build:single": "npm run build:worker && vite build --mode single",
+    "preview": "vite preview",
+    "test": "npm run build:worker && vitest run",
+    "server": "node server/index.mjs",
+    "build:worker": "node scripts/build-worker.mjs",
+    "build:artifact": "npm run build:worker && vite build --mode artifact"
+  },
+  "dependencies": {
+    "idb": "^8.0.3",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/node": "^22.20.2",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "fake-indexeddb": "^6.2.5",
+    "http_ece": "^1.2.1",
+    "jsdom": "^30.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^5.4.21",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^2.1.9"
+  }
+}
